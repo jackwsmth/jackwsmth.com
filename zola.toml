@@ -1,0 +1,57 @@
+base_url = "https://jackwsmth.com"
+title = "Jack Smith ʕ•ᴥ•ʔ"
+generate_feeds = true
+theme = "zola-bearblog"
+default_language = "en"
+
+taxonomies = [
+  { name = "categories", feed = true },
+  { name = "tags", feed = true },
+]
+
+[languages]
+
+[languages.en.translations]
+site = "Site"
+made_with = "Made with"
+home = "Home"
+posts = "Posts"
+tags = "Tags"
+no_posts = "No posts yet."
+filtering_for = "Filtering for"
+table_of_contents = "Table of contents"
+
+[markdown]
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+[extra]
+date_format = "%Y-%m-%d"
+webserver_sends_csp_headers = true
+language_switcher = false
+translations = [
+  { code = "en", name = "English" },
+]
+
+
+[extra.table_of_contents]
+show = true
+max_level = 2
+visible_on_load = false
+
+[[extra.main_menu]]
+name = "Home"
+url = "@/_index.md"
+
+[[extra.main_menu]]
+name = "About"
+url = "@/about.md"
+
+[[extra.main_menu]]
+name = "Blog"
+url = "@/blog/_index.md"
+
+[[extra.main_menu]]
+name = "Bear"
+url = "@/bear.md"
